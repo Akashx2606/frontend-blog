@@ -5,7 +5,7 @@ const Home = () => {
 
   useEffect(() => {
     async function getdata() {
-      const data = await fetch("http://localhost:8080/blogs")
+      const data = await fetch("https://backend-blog-delta.vercel.app/blogs")
       const json = await data.json()
       console.log(json)
       setValue(json)
